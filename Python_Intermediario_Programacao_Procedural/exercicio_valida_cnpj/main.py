@@ -1,5 +1,8 @@
 import valida_cnpj
 
-# cnpj_inputado = valida_cnpj.remover_caracteres('04.252.011/0001-10')
-cnpj_inputado = valida_cnpj.valida_cnpj('00.000.000/0000-00')
-print(cnpj_inputado)
+cnpj1 = '04.252.011/0001-10'
+
+if valida_cnpj.valida(cnpj1):
+    print(f'{cnpj1} é válido')
+else:
+    print(f'{cnpj1} é inválido')
