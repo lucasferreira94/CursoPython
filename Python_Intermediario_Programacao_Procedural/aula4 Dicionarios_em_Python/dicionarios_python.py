@@ -108,18 +108,17 @@ d1 = dict(lista)
 print(f'Essa é uma lista = {lista}')
 print(f'Este é um dicionário = {d1}')
 """
-d1 = {
-    1: 2,
-    2: 3,
-    4: 5,
-}
-
-d2 = {
-    'a': 'b',
-    'c': 'd',
-}
-# d1.pop(4)
-d1.update(d2)
-print(d1)
-
+# d1 = {
+#     1: 2,
+#     2: 3,
+#     4: 5,
+# }
+#
+# d2 = {
+#     'a': 'b',
+#     'c': 'd',
+# }
+# # d1.pop(4)
+# d1.update(d2)
+# print(d1)
 

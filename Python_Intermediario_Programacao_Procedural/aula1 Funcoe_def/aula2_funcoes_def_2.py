@@ -41,13 +41,14 @@ print(variavel)
 #
 # print(outra_variavel)
 
-variavel = 'valor'
+# variavel = 'valor'
+#
+# def func():
+#     outra_variavel = 'valor'
+#
+# def func2():
+#     print(outra_variavel)
+#
+# func()
+# func2()
 
-def func():
-    outra_variavel = 'valor'
-
-def func2():
-    print(outra_variavel)
-
-func()
-func2()
