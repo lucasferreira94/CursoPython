@@ -121,4 +121,3 @@ print(f'Este é um dicionário = {d1}')
 # # d1.pop(4)
 # d1.update(d2)
 # print(d1)
-
