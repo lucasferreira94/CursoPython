@@ -1,5 +1,7 @@
 from pessoa import Pessoa
 
 p1 = Pessoa('Luiz', 29)
-p1.comer('maçã')
-p1.comer('maçã')
+p2 = Pessoa('João', 32)
+
+print(p1.get_ano_nascimento())
+print(p2.get_ano_nascimento())
