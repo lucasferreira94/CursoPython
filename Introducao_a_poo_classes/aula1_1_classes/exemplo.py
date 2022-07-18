@@ -19,7 +19,7 @@ class Cliente:
 
     def ver_filme(self, filme, plano_filme):
         if self.plano == plano_filme:
-            print(f"Ver file {filme}")
+            print(f"Ver filme {filme}")
         elif self.plano == "premium":
             print(f"ver Filme {filme}")
         elif self.plano == "basic" and plano_filme == "premium":
