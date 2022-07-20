@@ -1,26 +1,32 @@
+"""
+_ privado/protected (public _)
+__ privado (_NOMECLASSE__nomeatributo)
+
+"""
+
+
 class BaseDeDados:
     def __init__(self):
-        self.dados = {}
+        self.__dados = {}
 
     def inserir_cliente(self, id, nome):
-        if 'clientes' not in self.dados:
-            self.dados['clientes'] = {id: nome}
+        if 'clientes' not in self.__dados:
+            self.__dados['clientes'] = {id: nome}
         else:
-            self.dados['clientes'].update({id: nome})
+            self.__dados['clientes'].update({id: nome})
 
     def lista_clientes(self):
-        for id, nome in self.dados['clientes'].items():
+        for id, nome in self.__dados['clientes'].items():
             print(id, nome)
 
     def apaga_cliente(self, id):
-        del self.dados['clientes'][id]
+        del self.__dados['clientes'][id]
 
 
 bd = BaseDeDados()
 bd.inserir_cliente(1, 'Otávio')
 bd.inserir_cliente(2, 'Miranda')
 bd.inserir_cliente(3, 'Rose')
+bd.__dados = 'uma outra coisa'
 
-bd.dados = 'Qualquer outra coisa'
 
-bd.lista_clientes()
